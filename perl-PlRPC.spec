@@ -6,13 +6,13 @@
 Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
-Version:	0.2017
-Release:	4
+Version:	0.2018
+Release:	1
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
-# Source0-md5:	e70f33f0f8c30ee5547865c15b811b7d
+# Source0-md5:	bfa447a80e73fec54eb3c12fab4b9bdc
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-devel >= 1:5.8.0

@@ -1,13 +1,13 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# perform "make test" (needs working syslog)
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2017
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl

@@ -3,7 +3,7 @@ Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2016
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz

@@ -6,7 +6,7 @@ Version:	0.2016
 Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/RPC/PlRPC-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.0.2-54
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Net-Daemon

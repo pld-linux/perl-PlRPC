@@ -7,7 +7,7 @@ Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2018
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
@@ -53,4 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/RPC/PlClient.pm
 %{perl_vendorlib}/RPC/PlServer.pm
 %{perl_vendorlib}/RPC/PlServer
+%{perl_vendorlib}/RPC/PlClient
 %{_mandir}/man3/R*

@@ -3,11 +3,11 @@ Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2016
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 4.0.2-54
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-Storable
@@ -27,7 +27,8 @@ wy³±cznie w perlu.
 %setup -q -n PlRPC-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -41,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
-%{perl_sitelib}/RPC/PlClient.pm
-%{perl_sitelib}/RPC/PlServer.pm
-%{perl_sitelib}/RPC/PlServer
+%{perl_vendorlib}/RPC/PlClient.pm
+%{perl_vendorlib}/RPC/PlServer.pm
+%{perl_vendorlib}/RPC/PlServer
 %{_mandir}/man3/R*

@@ -1,10 +1,16 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
+
 %include	/usr/lib/rpm/macros.perl
 Summary:	PlRPC perl module
 Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2017
 Release:	1
-License:	GPL
+# as perl itself
+License:	GPLv1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 # Source0-md5:	e70f33f0f8c30ee5547865c15b811b7d
@@ -31,6 +37,8 @@ wy³±cznie w perlu.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests: %{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT

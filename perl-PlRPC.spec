@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2012
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/RPC/PlRPC-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-Net-Daemon
@@ -18,8 +18,8 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-PlRPC (Perl RPC) is a package for implementing servers and clients that
-are written in Perl entirely.
+PlRPC (Perl RPC) is a package for implementing servers and clients
+that are written in Perl entirely.
 
 %description -l pl
 PlRPC (Perl RPC) to pakiet s³u¿±cy do tworzenia serwerów i klientów

@@ -27,7 +27,7 @@ wy³±cznie w perlu.
 %setup -q -n PlRPC-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install

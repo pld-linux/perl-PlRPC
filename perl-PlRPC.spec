@@ -7,6 +7,7 @@ Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
+# Source0-md5: 440aa210a452edbe3d3a4edaaa1548ba
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-Net-Daemon

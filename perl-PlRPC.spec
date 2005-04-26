@@ -26,7 +26,7 @@ that are written in Perl entirely.
 
 %description -l pl
 PlRPC (Perl RPC) to pakiet s³u¿±cy do tworzenia serwerów i klientów
-wy³±cznie w perlu.
+wy³±cznie w Perlu.
 
 %prep
 %setup -q -n PlRPC-%{version}

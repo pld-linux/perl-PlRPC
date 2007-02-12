@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	PlRPC perl module
-Summary(pl):	Modu³ Perla PlRPC
+Summary(pl.UTF-8):   ModuÅ‚ Perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2018
 Release:	2
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 PlRPC (Perl RPC) is a package for implementing servers and clients
 that are written in Perl entirely.
 
-%description -l pl
-PlRPC (Perl RPC) to pakiet s³u¿±cy do tworzenia serwerów i klientów
-wy³±cznie w Perlu.
+%description -l pl.UTF-8
+PlRPC (Perl RPC) to pakiet sÅ‚uÅ¼Ä…cy do tworzenia serwerÃ³w i klientÃ³w
+wyÅ‚Ä…cznie w Perlu.
 
 %prep
 %setup -q -n PlRPC-%{version}

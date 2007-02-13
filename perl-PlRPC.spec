@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	PlRPC perl module
-Summary(pl.UTF-8):   Moduł Perla PlRPC
+Summary(pl.UTF-8):	Moduł Perla PlRPC
 Name:		perl-PlRPC
 Version:	0.2018
 Release:	2

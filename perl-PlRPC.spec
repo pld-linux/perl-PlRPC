@@ -6,13 +6,13 @@
 Summary:	PlRPC perl module
 Summary(pl.UTF-8):	Moduł Perla PlRPC
 Name:		perl-PlRPC
-Version:	0.2018
-Release:	2
+Version:	0.2019
+Release:	1
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
-# Source0-md5:	bfa447a80e73fec54eb3c12fab4b9bdc
+# Source0-md5:	8eb2b0561837178aab6cb202c8d6d8e6
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -47,6 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+# do we package Bundle::* modules or not?
+# or maybe as subpackage
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README

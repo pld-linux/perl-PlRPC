@@ -13,6 +13,7 @@ License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 # Source0-md5:	8eb2b0561837178aab6cb202c8d6d8e6
+URL:		http://search.cpan.org/dist/PlRPC/
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-devel >= 1:5.8.0

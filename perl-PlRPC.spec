@@ -6,13 +6,13 @@
 Summary:	PlRPC perl module
 Summary(pl.UTF-8):	Moduł Perla PlRPC
 Name:		perl-PlRPC
-Version:	0.2019
+Version:	0.2020
 Release:	1
 # same as perl
 License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
-# Source0-md5:	8eb2b0561837178aab6cb202c8d6d8e6
+# Source0-md5:	5361e137e56d037c5e796926ecb5300b
 URL:		http://search.cpan.org/dist/PlRPC/
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Net-Daemon
@@ -30,7 +30,7 @@ PlRPC (Perl RPC) to pakiet służący do tworzenia serwerów i klientów
 wyłącznie w Perlu.
 
 %prep
-%setup -q -n PlRPC-%{version}
+%setup -q -n PlRPC
 
 %build
 %{__perl} Makefile.PL \

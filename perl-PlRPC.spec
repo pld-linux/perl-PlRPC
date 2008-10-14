@@ -17,6 +17,7 @@ URL:		http://search.cpan.org/dist/PlRPC/
 BuildRequires:	perl-Compress-Zlib
 BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	perl-perldoc
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

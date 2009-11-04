@@ -14,8 +14,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 # Source0-md5:	5361e137e56d037c5e796926ecb5300b
 URL:		http://search.cpan.org/dist/PlRPC/
-BuildRequires:	perl-Compress-Zlib
+%if %{with tests}
+BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-Net-Daemon
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-perldoc
 BuildRequires:	rpm-perlprov >= 4.1-13

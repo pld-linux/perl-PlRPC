@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (needs working syslog)
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	PlRPC perl module
 Summary(pl.UTF-8):	Moduł Perla PlRPC
 Name:		perl-PlRPC

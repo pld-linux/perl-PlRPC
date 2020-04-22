@@ -12,7 +12,7 @@ License:	GPL v1 or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/RPC/PlRPC-%{version}.tar.gz
 # Source0-md5:	5361e137e56d037c5e796926ecb5300b
-URL:		http://search.cpan.org/dist/PlRPC/
+URL:		https://metacpan.org/release/PlRPC
 %if %{with tests}
 BuildRequires:	perl(Compress::Zlib)
 BuildRequires:	perl-Net-Daemon
@@ -20,6 +20,7 @@ BuildRequires:	perl-Net-Daemon
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-perldoc
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +40,7 @@ wyłącznie w Perlu.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{?with_tests: %{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -47,11 +48,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Bundle/PlRPC.pm \
+	$RPM_BUILD_ROOT%{_mandir}/man3/Bundle::PlRPC.3pm
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-# do we package Bundle::* modules or not?
-# or maybe as subpackage
 %files
 %defattr(644,root,root,755)
 %doc ChangeLog README
@@ -59,4 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/RPC/PlServer.pm
 %{perl_vendorlib}/RPC/PlServer
 %{perl_vendorlib}/RPC/PlClient
-%{_mandir}/man3/R*
+%{_mandir}/man3/RPC::PlClient.3pm*
+%{_mandir}/man3/RPC::PlServer.3pm*
